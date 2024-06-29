@@ -5,12 +5,9 @@ html {
 	-ms-text-size-adjust:     100%;
 }
 
-@keyframes gradient-animation {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
+
 .container {
-  background: linear-gradient(to right, #ff6b6b, #6b6bff);
+  background: none;
     background-size: 200% auto;
     animation: gradient-animation 10s ease infinite;
   color:linear-gradient(to right, #ff6b6b, #6b6bff);
@@ -19,7 +16,7 @@ html {
 .navigation {
 	list-style: none;
 	margin: 0;
-	background: linear-gradient(to right, #ff6b6b, #6b6bff);
+	background: none;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -73,8 +70,9 @@ table {
   
   body {
     font-family: 'Lato', serif;
-    color: #333;
-    background-color: darkgrey;
+    color: black;
+    background-color: white
+    ;
   }
   
   form {
