@@ -7,10 +7,8 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///assignment3.db'
-
-
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes = 15)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://b20bysheharyar-main-db-02b92af9265e4f65a:2QPzc3grXmcNuQKSXNrJP3UKKjW3Rq@user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com:5432/b20bysheharyar-main-db-02b92af9265e4f65a'
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
